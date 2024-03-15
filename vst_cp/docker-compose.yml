@@ -1,0 +1,34 @@
+version: '1'
+services:
+  init-vst:
+    image: ubuntu
+    network_mode: "host"
+    volumes:
+      - ./config/init-container/health-check-script.sh:/health-check-script.sh
+    command: sh -c "chmod 1777 /tmp && /health-check-script.sh"
+    environment:
+      PORTS: "6379"
+    deploy:
+      restart_policy: 
+        condition: on-failure
+  vst:
+    image: nvcr.io/rxczgrvsg8nx/vst-1-0/vst:v1.2.37_aarch64
+    network_mode: "host"
+    runtime: nvidia
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "8192m"
+        max-file: "3"
+    container_name: vst
+    volumes:
+      - ./config:/root/configs
+    depends_on:
+      init-vst:
+        condition: service_completed_successfully
+    deploy:
+      resources:
+        limits:
+          memory: 5600M
+      restart_policy:
+        condition: always
