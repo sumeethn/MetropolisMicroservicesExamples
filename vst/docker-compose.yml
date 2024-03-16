@@ -15,16 +15,16 @@ services:
     image: nvcr.io/rxczgrvsg8nx/vst-1-0/vst:v1.2.37_aarch64
     network_mode: "host"
     runtime: nvidia
+    command: ["--vstConfigFile", "/root/configs/vst_config.json"]
+    volumes:
+      - ./configs:/root/configs
+      - ./configs/vst_config.json:/root/configs/vst_config.json
     logging:
       driver: "json-file"
       options:
         max-size: "8192m"
         max-file: "3"
     container_name: vst
-    environment:
-      vstConfigFile: "/root/configs/vst_config.json"
-    volumes:
-      - ./configs:/root/configs
     depends_on:
       init-vst:
         condition: service_completed_successfully
