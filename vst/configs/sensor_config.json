@@ -1,0 +1,40 @@
+[
+	{
+		"firmwareVersion" : "0222",
+		"hardware" : "CC9381-HV",
+		"hardwareId" : "ROSSINI",
+		"isRemoteSensor" : false,
+		"location" : "global-video_analytic",
+		"manufacturer" : "vivotek",
+		"name" : "VIVOTEK%20CC9381-HV",
+		"position" : 
+		{
+			"coordinates" : 
+			{
+				"x" : "",
+				"y" : ""
+			},
+			"depth" : "",
+			"direction" : "",
+			"fieldOfView" : "",
+			"geoLocation" : 
+			{
+				"latitude" : "",
+				"longitude" : ""
+			},
+			"origin" : 
+			{
+				"latitude" : "",
+				"longitude" : ""
+			}
+		},
+		"remoteDeviceId" : "751f333f-1250-41fa-9a67-339e11c145c0",
+		"remoteDeviceLocation" : "",
+		"remoteDeviceName" : "VST",
+		"sensorId" : "315cab6d-586f-4274-97f4-15ba1d057da6",
+		"sensorIp" : "10.110.20.110:80",
+		"serialNumber" : "0002D1935AD7",
+		"state" : "online",
+		"tags" : ""
+	}
+]

@@ -1,0 +1,44 @@
+[
+	{
+		"isMain" : true,
+		"metadata" : 
+		{
+			"bitrate" : "8000",
+			"codec" : "H264",
+			"framerate" : "20",
+			"govlength" : "60",
+			"resolution" : "2048x1536"
+		},
+		"name" : "VIVOTEK%20CC9381-HV",
+		"streamId" : "315cab6d-586f-4274-97f4-15ba1d057da6",
+		"url" : "rtsp://10.110.20.107/live/315cab6d-586f-4274-97f4-15ba1d057da6"
+	},
+	{
+		"isMain" : false,
+		"metadata" : 
+		{
+			"bitrate" : "80000",
+			"codec" : "H264",
+			"framerate" : "15",
+			"govlength" : "15",
+			"resolution" : "640x480"
+		},
+		"name" : "VIVOTEK%20CC9381-HV-Profiled321",
+		"streamId" : "315cab6d-586f-4274-97f4-15ba1d057da6-Profiled321",
+		"url" : "rtsp://10.110.20.107/live/315cab6d-586f-4274-97f4-15ba1d057da6-Profiled321"
+	},
+	{
+		"isMain" : false,
+		"metadata" : 
+		{
+			"bitrate" : "80000",
+			"codec" : "H264",
+			"framerate" : "24",
+			"govlength" : "24",
+			"resolution" : "2560x1920"
+		},
+		"name" : "VIVOTEK%20CC9381-HV-Profile46c1",
+		"streamId" : "315cab6d-586f-4274-97f4-15ba1d057da6-Profile46c1",
+		"url" : "rtsp://10.110.20.107/live/315cab6d-586f-4274-97f4-15ba1d057da6-Profile46c1"
+	}
+]
